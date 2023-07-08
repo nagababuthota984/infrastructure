@@ -18,3 +18,7 @@ resource "aws_s3_bucket_versioning" "nb-bucket-versioning" {
       status = "Enabled"
     }
 }
+
+output "message" {
+    value = aws_s3_bucket.nb-bucket.bucket + "will be created/ if not already"
+}
