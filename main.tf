@@ -2,6 +2,6 @@ provider "aws"{
     region = "us-east-1"
 }
 
-resource "aws-s3-bucket" "nb-bucket"{
+resource "aws_s3_bucket" "nb-bucket"{
     bucket = "red-bucket"
 }
