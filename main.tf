@@ -8,7 +8,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "nb-bucket"{
-    bucket = "red-bucket"
+    bucket = "nagababu.thota-red-bucket"
     versioning {
       enabled = true
     }
