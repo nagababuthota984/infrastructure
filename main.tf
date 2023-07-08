@@ -17,6 +17,7 @@ resource "aws_s3_bucket_versioning" "nb-bucket-versioning" {
     versioning_configuration {
       status = "Enabled"
     }
+    provider = aws.east2
 }
 
 output "message" {
