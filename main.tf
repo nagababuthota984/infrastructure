@@ -35,8 +35,8 @@ module "network" {
     resource_group_name = var.terrashopDefaultRgName
     ip_configuration = {
       name                          = var.terrashopDefaultIpConfigName
-      subnet_id                     = ""
+      subnet_id                     = module.network.subnet_id
       private_ip_address_allocation = "Dynamic"
-      public_ip_address_id          = ""
+      public_ip_address_id          = module.network.public_ip_address_id
   } }
 }

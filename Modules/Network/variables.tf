@@ -38,3 +38,8 @@ variable "networkInterfaceConfig" {
     })
   })
 }
+variable public_ip_address_id{
+    type = string
+    description = "Id of Public Ip Address"
+    default = ""
+}
